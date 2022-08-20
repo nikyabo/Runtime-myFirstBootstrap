@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Runtime</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/19d82403b1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+    <style>
+        h1,h2,h3,h4,h5,p,li,button,input,body{
+            font-family: 'Montserrat', sans-serif;
+        }
+        h2{
+            font-weight:700;
+        }
+
+        button.menubutton{
+            stroke-width: 3px;
+            border-radius:100px;
+        }
+        button.runtimebutton{
+            stroke-width: 3px;
+            border-radius:100px;
+            background-color:#0772AE; 
+            color:#fff;
+        }
+        p.VareTjenesterP{
+           margin-top:23px; 
+        }
+        img.imageblockcenter{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p.centeraligner{
+            text-align:center;
+        }
+        #imageArrangement{
+            background:url('images/bg-img.png');
+            position:absolute;
+            right:0px;
+            bottom:0px;
+        }
+       ul{
+            list-style-type: none;
+
+       } 
+       ul.sectionlist{
+            list-style-type: none;
+
+       } 
+        
+        ul.sectionlist li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Pro";
+            padding: 0 15px 0 0;
+        }
+        
+        .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+            background-color: #0772AE;
+        }
+    </style>
+</head>
+<body>
+    
+<!--Menu-->
+<div class= "fixed-top" style="background-color:#fff">
+    <div class="container" >
+        <nav class="navbar navbar-expand-xl navbar-light"> 
+            <a href="#" class="navbar-brand">
+                <img src="runtimelogo.png" alt="runtime logo" width="157" height="40" class="d-inline-block align-top ml-5">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu" aria-controls="#toggleMobileMenu" aria-expanded="false" aria-table="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu" >
+                <ul class="navbar-nav ms-auto text-center navbarmenu">
+                    <li class="nav-item mt-1">
+                        <a class="nav-link" href="#">Våre tjenester</a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a class="nav-link" href="#">Referanser</a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item mt-1">
+                        <a class="nav-link" href="#">Om oss</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><button type="button" class="btn runtimebutton menubutton">Kontakt Oss</button></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!--Section-->
+   <section>
+    <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <h1 class="mt-5" style="font-size:40px; font-weight: 800; font-family: 'Montserrat', sans-serif;">Lei en IT-avdeling</h1>
+                    <p class="mt-5">Vi hjelper kundene med å redusere risiko, fremme vekst og utvikling, gi forutsigbare 
+                        kostnader og en problemfri IT-hverdag.<br><br>Store og erfarne nok til å ha leveransekapasitet, små nok til å bry oss om hver kunde.</p>
+                        <button type="button" class="btn runtimebutton mt-5 d-flex">Kontakt oss for å få vite mer</button>
+                </div> 
+                <div class="col-sm-5 ms-auto p-0" style="right:0px;">
+                    <img src="bannerimage.png" alt-text="bannerimage">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--Section-->
+    <section style="background-color: #F5FAFD;">
+        <div class="container justify-content-center py-5">
+            <h2 class="text-center mt-5">Våre tjenester</h2>
+            <div class="row py-5 d-flex flex-row gx-2 mt-5">
+                <div class="col-sm justify-content-center">
+                    <img src="server.png" alt="Snow" class="imageblockcenter">
+                    <p class="mt-4 centeraligner">Server</p>
+                </div>
+                <div class="col-sm justify-content-center">
+                    <img src="Sikkerhet.png" alt="Forest" class="imageblockcenter">
+                    <p class="mt-4 centeraligner">Sikkerhet</p>
+                </div>
+                <div class="col-sm justify-content-center">
+                    <img src="Vector Smart Object.png" alt="Mountains" class="imageblockcenter">
+                    <p class="mt-4 centeraligner">Microsoft 365</p>
+                </div>
+                <div class="col-sm justify-content-center">
+                    <img src="Andre tjenester.png" alt="Snow" class="imageblockcenter">
+                    <p class="mt-4 centeraligner">Server</p>
+                </div>
+                <div class="col-sm justify-content-center" >
+                    <img src="support.png" alt="Forest" class="imageblockcenter">
+                    <p class="mt-4 centeraligner" >Support</p>
+                </div>
+            </div> 
+        </div>
+</section>
+
+<!--Section-->
+<section style="background-color: #F5FAFD;"></section>
+    <div class="container" style="padding-top:70px; padding-bottom:70px;">
+        <div class="row align-items-center">
+            <div class="col-6">
+            <h2>Nå får du vrakpant på server</h2>
+            <p>På samme måte som bil, mener vi også at servere blir gamle og usikre. 
+                Vi ønsker derfor å gi samme beløp i vrakpant på server som vi er vandt til fra bilverden, 
+                dersom du går over til skybasert server hos runtime. Du vil da enten gå over til en Azure server, 
+                driftet av Microsoft, det sikreste og beste serveralternativet på markedet. Eller du vil få et serverfritt miljø.</p>
+                <button type="button" class="btn runtimebutton mt-5 d-flex">Kontakt oss for å få vite mer</button>
+            </div>
+
+            <div class="col-sm-6">
+                <img src="vrakpant.png" alt="Forest">
+                </div>
+        </div>   
+    </div>
+</section>
+
+<!--Section-->
+<section style="background-color: #F5FAFD;">
+    <div class="container" style="padding-top:70px; padding-bottom:70px;">
+        <div class="row align-items-center">
+            <div class="col-sm-6">
+                <img src="chair.png" alt="Forest">
+                </div>
+            <div class="col-sm-6">
+            <h2>IT-avdeling </h2>
+            <p>Kontinuerlig drift og vedlikehold av ditt IT-utstyr. Rådgivning rundt IT og system.<br>
+                Pris fra kroner  <span style="color:#0772AE; font-weight:700; font-size:44px;">990,-</span>/mnd</p>
+
+                <button type="button" class="btn runtimebutton mt-3 buttoncolorizer">Kontakt oss for å få vite mer</button>
+            </div>
+        </div>  
+    </div>
+    </section>
+
+<!--Section-->
+    <section style="background-color: #fff;">
+        <div class="container d-flex flex-row" style="padding-top:70px;"> 
+            <div class="col-sm-5 flex-column">
+                <h2>Få en gratis sikkerhetssjekk</h2><br>
+                <input type="email" placeholder="Navn" name="email" class="form-control mt-3" style="width:100%; border-radius:100px; stroke-width:none; background-color:#DFE8ED; text-align:center;" ></input>
+                <input type="email" placeholder="E-post" name="email" class="form-control mt-3" style="width:100%; border-radius:100px; stroke-width:none; background-color:#DFE8ED; text-align:center;" ></input>
+                <input type="email" placeholder="Telefon" name="email" class="form-control mt-3" style="width:100%; border-radius:100px; stroke-width:none; background-color:#DFE8ED; text-align:center;" ></input>
+                <button type="button" class="btn runtimebutton mt-3 buttoncolorizer" style="width:100%; text-align:center;">Kontakt oss for å få vite mer</button>
+            </div>  
+            
+            <div class="col-sm-6 offset-1">
+                <img src="person contact.png" style="float:right;" alt="Forest">
+            </div>
+        </div>
+    </section>
+
+    <!--Section-->
+    <section style="background-color: #F5FAFD;">
+        <div class="container justify-content-center py-5">
+            <h2 class="text-center mt-5">Jobb smart med Microsoft 365</h2>
+            <div class="row py-5 d-flex flex-row gx-2 mt-5">
+                <div class="col justify-content-center">
+                    <img src="Få mer gjort.png" alt="Snow" class="imageblockcenter">
+                    <p class="mt-4 centeraligner">Få mer gjort</p>
+                </div>
+                <div class="col justify-content-center">
+                    <img src="Samarbeid bedre.png" alt="Forest" class="imageblockcenter">
+                    <p class="mt-4 centeraligner">Samarbeid bedre</p>
+                </div>
+                <div class="col justify-content-center">
+                    <img src="Intelligent sikkerhet.png" alt="Mountains" class="imageblockcenter">
+                    <p class="mt-4 centeraligner">Intelligent sikkerhet</p>
+                </div>
+                <div class="col justify-content-center">
+                    <img src="Sikre dataene dine.png" alt="Snow" class="imageblockcenter">
+                    <p class="mt-4 centeraligner">Sikre dataene dine</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+     <!--Section Alltid hyggelig med gode tilbakemeldinger fra kunder-->
+    <section style="background-color: #0772AE;">
+        <div class="container justify-content-center py-5">
+            <h2 class="text-center mt-5" style="color:white;">Alltid hyggelig med gode tilbakemeldinger fra kunder</h2>
+            <div class="row py-5 d-flex flex-row gx-2 mt-5">
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body p-5 gx-5">
+                            Vi har vært kunde i 17 år. Vi sonderte markedet for noen år siden, men kom frem til at vi 
+                            fremdeles synes Runtime var best på pris, løsningsforslag og trygghet. De har også en nærhet 
+                            til kunde som føles trygg, og vi vet de alltid stiller opp dersom noe uforutsett skjer.
+                            <div class="d-flex flex-row mt-5">
+                                <img src="image 1.png" height="100%" width="auto">
+                                <p style="margin-left:12px;"><span style="font-weight:700; color:#0772AE">Anne Kirsti Melhus</span><br> <span style="font-size:13px; color:#888888">Administrerende direktør</span></p>
+                            </div>
+                            <div>
+                                <img src="opt quote.png" height="91px" width="65px" style="position:absolute; right:22px; bottom:22px;">
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-body p-5 gx-5">
+                                Vi har vært kunde i 17 år. Vi sonderte markedet for noen år siden, men kom frem til at vi 
+                                fremdeles synes Runtime var best på pris, løsningsforslag og trygghet. De har også en nærhet 
+                                til kunde som føles trygg, og vi vet de alltid stiller opp dersom noe uforutsett skjer.
+                                <div class="d-flex flex-row mt-5">
+                                    <img src="image 2.png" height="100%" width="auto">
+                                    <p style="margin-left:12px;"><span style="font-weight:700; color:#0772AE">Anne Kirsti Melhus</span><br> <span style="font-size:13px; color:#888888">Administrerende direktør</span></p>
+                                </div>
+                                <div>
+                                    <img src="det quote.png" height="91px" width="65px" style="position:absolute; right:22px; bottom:22px;">
+                                </div>
+                                
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="card">
+                                <div class="card-body p-5 gx-5">
+                                    Vi har vært kunde i 17 år. Vi sonderte markedet for noen år siden, men kom frem til at vi 
+                                    fremdeles synes Runtime var best på pris, løsningsforslag og trygghet. De har også en nærhet 
+                                    til kunde som føles trygg, og vi vet de alltid stiller opp dersom noe uforutsett skjer.
+                                    <div class="d-flex flex-row mt-5">
+                                        <img src="image 3.png" height="100%" width="auto">
+                                        <p style="margin-left:12px;"><span style="font-weight:700; color:#0772AE">Dag Albert Bårnes</span><br> <span style="font-size:13px; color:#888888">Administrasjons- og 
+                                        økonomileder</span></p>
+                                        <img src="caritas quote.png" height="82px" width="78px" style="position:absolute; right:22px; bottom:22px;">
+                                    </div>
+                                    <div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+    </section>
+
+    <!--Section-->
+    <section style="background-color: #F5FAFD;">
+        <div class="container justify-content-center py-5">
+            <h2 class="text-center mt-5">Gode samarbeidspartnere</h2>
+            <div class="row py-5 d-flex flex-row gx-2 mt-5">
+                <div class="col justify-content-center">
+                    <img src="hp_business_partner.png" alt="Snow" class="imageblockcenter">
+                </div>
+                <div class="col justify-content-center">
+                    <img src="microsoft-silver-partner.png" alt="Forest" class="imageblockcenter">
+                </div>
+                <div class="col justify-content-center">
+                    <img src="2000px-Vmware.svg.png" alt="Mountains" class="imageblockcenter">
+                </div>
+                <div class="col justify-content-center">
+                    <img src="Group 1 (merged).png" alt="Snow" class="imageblockcenter">
+                </div>
+            </div> 
+            <div class="row py-5 d-flex flex-row gx-2 mt-5">
+                <div class="col justify-content-center">
+                    <img src="2677fb6.png" alt="Snow" class="imageblockcenter">
+                </div>
+                <div class="col justify-content-center">
+                    <img src="Panda_Security_Logo_2015.svg.png" alt="Forest" class="imageblockcenter">
+                </div>
+                <div class="col justify-content-center">
+                    <img src="storage.png" alt="Mountains" class="imageblockcenter">
+                </div>
+                <div class="col justify-content-center">
+                    <img src="Adobe_Systems_Logo_002.svg.png" alt="Snow" class="imageblockcenter">
+                </div>
+            </div>
+        </div>
+    </section>
+<!--Section-->
+    <section style="background-color: #Fff;"></section>
+    <div class="container" style="margin-top:90px; margin-bottom:90px;">
+        <div class="row align-items-center">
+            <div class="col-7">
+                <img src="Rectangle 6.png" width="auto" alt="Forest">
+            </div>
+            <div class="col-5">
+                <h2>Det er flere grunner til at kundene velger oss:</h2>
+                <ul class="mt-5 mb-5 sectionlist" style="margin-left:-20px;">
+                    <li style="color:#0772AE;"><span style="color:#212529">Lang og solid erfaring – siden 1989</span></li>
+                    <li style="color:#0772AE;"><span style="color:#212529">Konkurransedyktige på pris</span></li>
+                    <li style="color:#0772AE;"><span style="color:#212529">Personlig service</span></li>
+                  </ul>
+                <button type="button" class="btn runtimebutton mt-3 d-flex buttoncolorizer">Les mer om Runtime</button>
+            </div>
+        </div>   
+    </div>
+    </section>
+    
+   <!--Section-->
+   <section style="background-color: #F5FAFD;">
+    <div class="container d-flex flex-row"> 
+        <div class="row align-items-center" style="margin-top:60px;">
+            <h2>Jeg heter Fredrik. Så hyggelig at du vil prate med meg!</h2>
+            <div class="col-4">
+                <p class="mt-5" style="text-align:center;">Send meg en beskjed</p>
+                <input type="email" placeholder="Navn" name="email" class="form-control mt-3" style="width:100%; border-radius:100px; stroke-width:none; background-color:#DFE8ED; text-align:center;" ></input>
+                <input type="email" placeholder="E-post" name="email" class="form-control mt-3" style="width:100%; border-radius:100px; stroke-width:none; background-color:#DFE8ED; text-align:center;" ></input>
+                <input type="email" placeholder="Melding" name="email" class="form-control mt-3" style="width:100%; height:95px; border-radius:17.5px; stroke-width:none; background-color:#DFE8ED; text-align:center;" ></input>
+                <button type="button" class="btn runtimebutton mt-3 buttoncolorizer" style="width:100%; text-align:center;">Kontakt oss for å få vite mer</button>
+            </div>  
+            
+            <div class="col-4" style="justify-content:center;">
+                <p class="mt-5" style="text-align:center;">Slå på tråden</p>
+                <img src="Telephone.png" alt-text="telephone" class="imageblockcenter">
+                <button type="button" class="btn runtimebutton mt-5 buttoncolorizer" style="width:100%; text-align:center;">Kontakt oss for å få vite mer</button>
+            </div> 
+            
+            <div class="col-4" style="float:right; right:0px; bottom:0px;">
+                <img src="Layer 1 copy.png" style="float:right;" alt="Forest">
+            </div>
+        </div>
+    </div>
+</section>
+    
+<!--footer-->
+    <footer class="page-footer" style="background-color:#051A30;">
+        <div class="container p-5" >
+            <div class="row">
+                <div class="col">
+                    <img src="runtime logo white.png" alt-text="runtime logo white">
+                    <p class="align-items-bottom" style="color:white; margin-top:50px;">© 2018 Runtime AS. Alle rettigheter reservert</p>
+                </div>
+
+                <div class="col-3 justify-content-center">
+                    <ul class="justify-content-center">
+                        <h4 style="color:#2286BA; font-size:20px;">Våre tjenester</h4>
+                        <li><a href="#" style="color:#fff; text-decoration:none;">Drift</a></li>
+                        <li><a href="#" style="color:#fff; text-decoration:none;">Sikkerhet</a></li>
+                        <li><a href="#" style="color:#fff; text-decoration:none;">Office 365</a></li>
+                        <li><a href="#" style="color:#fff; text-decoration:none;">Andre tjenester</a></li>
+                        <li><a href="#" style="color:#fff; text-decoration:none;">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-3">
+                    <ul class="justify-content-center">
+                        <h4 style="color:#2286BA; font-size:20px;">Kontakt</h4>
+                        <li style="color:white;">Tullins gate 2, 0166 Oslo.Postboks 6672, St.Olavs Plass 0129 Oslo</li> <br>
+                        <li style="color:white;">Telefon: <span style="color:#0772AE">23 23 75 80</span></li>
+                        <li style="color:white;">E-post: <span style="color:#0772AE">runtime@runtime.no</span></li>
+                    </ul>
+                </div>
+
+                <div class="col-3">
+                    <ul class="justify-content-center">
+                        <h4 style="color:#2286BA; font-size:20px;">Sosialt</h4>
+                        <li><a href="#" style="color:#fff; text-decoration:none;">Sikkerhet</a></li>
+                        <li><a href="#" style="color:#fff; text-decoration:none;">Sikkerhet</a></li>
+                        <li><a href="#" style="color:#fff; text-decoration:none;">Office 365</a></li>
+                        <li><a href="#" style="color:#fff; text-decoration:none;">Andre tjenester</a></li>
+                        <li><a href="#" style="color:#fff; text-decoration:none;">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-3">
+                    <h4 style="color:#2286BA; font-size:20px;"></h4>
+                    <ul>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
